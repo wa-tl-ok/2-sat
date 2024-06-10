@@ -23,8 +23,8 @@ using namespace std;
 vector<int> top_sort;
 vector<int> SCC;
 vector<int> vis;
-vector<int> g[400010];
-vector<int> r_g[400010];
+vector<int> g[400010]; // 4 * max(n) + smth
+vector<int> r_g[400010]; // 4 * max(n) + smth
 
 void dfs(int v) {
     vis[v] = true;
